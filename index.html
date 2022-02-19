@@ -1158,8 +1158,89 @@
                     </div>
 
                     <!-- RIGHT SIDE -->
+                    <!-- Card  -->
+                <div class = "card" style="width: 1rem;">
+                    <form action = "" method = "post" id = "addCourse">
+                    <div class="card" style="width: 18rem;">
+                        <center><h5 class = "heading-5">Add Course</h5></center>
+                    <!-- Course Title-->
+                        <div class = "card-body">
+                        <label type = "text" for = "courseTitle">Course Title:</label>
+                        <input type = "text" id = "courseTitle" name = "courseTitle">
+                        </div>
+                    <!-- COLOR -->
+                        <div class = "card-body">
+                        <label type = "color" for = "colorPicker">Color :</label>
+                        <input type = "color" id = "colorPicker" name = "color">
+                        </div>
+                    <!-- Days of week -->
+                    <div class="card-body">
+                        <table>
+                        <tr>
+                            <td>
+                            <div class="days">
+                                <div class = "day-container" id = "Monday">
+                                <label>Mon</label>
+                                <div class="check-box-container">
+                                    <input type="checkbox" class = "checkbox">
+                                </div>
+                                </div>
+                                <div class = "day-container" id = "Tuesday">
+                                <label>Tues</label>
+                                <div class="check-box-container">
+                                    <input type="checkbox" class = "checkbox">
+                                </div>
+                                </div>
+                                <div class = "day-container" id = "Wednesday">
+                                <label>Wed</label>
+                                <div class="check-box-container">
+                                    <input type="checkbox" class = "checkbox">
+                                </div>
+                                </div>
+                                <div class = "day-container" id = "Thursday">
+                                <label>Thurs</label>
+                                <div class="check-box-container">
+                                    <input type="checkbox" class = "checkbox">
+                                </div>
+                                </div>
+                                <div class = "day-container" id ="Friday">
+                                <label>Fri</label>
+                                <div class="check-box-container">
+                                    <input type="checkbox" class = "checkbox">
+                                </div>
+                                </div>
+                            </div>
+                            </td>
+                        </tr>
+                        </table>
+                    </div>
+                    <!-- Time --> 
+                    <div class="card-body">
+                        <label for = "time-slots">Time Slots</label>
+                        <select id = "time-slots" name = "time">
+                            <option value = "8:00 AM - 9:15 AM">8:00 AM - 9:15 PM</option>
+                            <option value = "9:25 AM - 10:40 AM">9:25 AM - 10:40 AM</option>
+                            <option value = "10:50 AM - 12:05 PM">10:50 AM - 12:05 PM</option>
+                            <option value = "12:15 PM - 1:30 PM">12:15 PM - 1:30 PM</option>
+                            <option value = "1:40 PM - 2:55 PM">1:40 PM - 2:55 PM</option>
+                            <option value = "3:05 PM - 4:20 PM">3:05 PM - 4:20 PM</option>
+                            <option value = "4:30 PM - 5:45 PM">4:30 PM - 5:45 PM</option>
+                            <option value = "5:55 PM - 7:10 PM">5:55 PM - 7:10 PM</option>
+                            <option value = "7:20 PM - 8:35 PM">7:20 PM - 8:35 PM</option>
+                        </select>
+                    </div>
+            
+                    <div class="card-body">
+                        <input type = "text" placeholder= "Location" name = "location">
+                    </div>
+                    <div class="card-body">
+                        <input type = "text" placeholder = "Professor" name = "professor">
+                    </div>
+                    <button id = submitPopUp>Submit Me</button>
+                    </form>
                 </div>
             </main>
-      </div>
+        </div>
+    <script src="./js/action-form.js"></script>
   </body>
 </html>
