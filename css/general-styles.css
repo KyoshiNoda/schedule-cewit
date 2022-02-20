@@ -1,0 +1,80 @@
+/* || GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+
+/* || GENERAL STYLES */
+:root {
+    --logo-font: 'Pacifico', sans-serif;
+    --body-font: 'Roboto', sans-serif;
+    --primary-color: #58BC82;
+    --secondary-color: #E4E4E4;
+    --accent-color: #858585;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--body-font);
+    font-size: 1.5rem;
+    background-color: #FCFCFC;
+}
+
+img {
+    max-width: 100%;
+}
+
+span {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  outline: none;
+  border: none;
+  box-sizing: border-box; 
+  padding: 0;
+  margin: 0; 
+}
+
+textarea {
+  overflow: hidden;
+}
+
+button {
+    color: inherit;
+}
+
+.container {
+    padding: 0 3rem;
+}
+
+/* || UTILITY CLASSES */
+.active-nav-link {
+    color: #000;
+}
