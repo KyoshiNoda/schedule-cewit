@@ -1,37 +1,410 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- CSS -->
     <link rel="stylesheet" href="./css/index.css">
     <title>Scheduler</title>
-  </head>
-  <body>
-      <div class="container">
-          <!-- HEADER -->
-          <header>
-              <nav class="main-nav">
-                  <h1 class="main-nav-logo">Scheduler</h1>
-                  <ul class="main-nav-links">
-                      <li class="main-nav-link main-nav-link-1">Info</li>
-                      <li class="main-nav-link main-nav-link-2">Scheduler</li>
-                  </ul>
-              </nav>
-            </header>
+</head>
 
-          <!-- MAIN CONTENT -->
-            <main class="main-content">
-                <div class="schedule-tabs">
-                    <span data-tab-value="tab-1" class="tab tab-1">Schedule 1</span>
-                    <span data-tab-value="tab-2" class="tab tab-2">Schedule 2</span>
-                    <span data-tab-value="tab-3" class="tab tab-3">Available Times</span>
+<body>
+    <div class="container">
+        <!-- HEADER -->
+        <header>
+            <nav class="main-nav">
+                <h1 class="main-nav-logo">Scheduler</h1>
+                <ul class="main-nav-links">
+                    <li class="main-nav-link main-nav-link-1">Info</li>
+                    <li class="main-nav-link main-nav-link-2">Scheduler</li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+            <div class="schedule-tabs">
+                <span data-tab-value="tab-1" class="tab tab-1">Schedule 1</span>
+                <span data-tab-value="tab-2" class="tab tab-2">Schedule 2</span>
+                <span data-tab-value="tab-3" class="tab tab-3">Available Times</span>
+            </div>
+            <div class="split">
+                <!-- LEFT SIDE -->
+                <div class="left schedule-container">
+                    <div class="schedule schedule-1 active-schedule" data-tab-schedule>
+                        <div class="schedule-grid">
+                            <!-- FIRST ROW -->
+                            <div class="grid-item-1 grid-item">
+                                <!-- This div will be empty -->
+                            </div>
+                            <div class="grid-item-2 grid-item">
+                                <span class="schedule-day">Monday</span>
+                            </div>
+                            <div class="grid-item-3 grid-item">
+                                <span class="schedule-day">Tuesday</span>
+                            </div>
+                            <div class="grid-item-4 grid-item">
+                                <span class="schedule-day">Wednesday</span>
+                            </div>
+                            <div class="grid-item-5 grid-item">
+                                <span class="schedule-day">Thursday</span>
+                            </div>
+                            <div class="grid-item-6 grid-item">
+                                <span class="schedule-day">Friday</span>
+                            </div>
+                            <!-- SECOND ROW -->
+                            <div class="grid-item-7 grid-item">
+                                <span class="grid-hour">8:00AM - 9:15AM</span>
+                            </div>
+                            <div class="grid-item-8 grid-item">
+                                <div class="course-information">
+                                    <h2 class="course-title"></h2>
+                                    <span class="course-location"></span>
+                                    <span class="course-professor"></span>
+                                </div>
+                            </div>
+                            <div class="grid-item-9 grid-item">
+                                <div class="course-information">
+                                    <h2 class="course-title"></h2>
+                                    <span class="course-location"></span>
+                                    <span class="course-professor"></span>
+                                </div>
+                            </div>
+                            <div class="grid-item-10 grid-item">
+                                <div class="course-information">
+                                    <h2 class="course-title"></h2>
+                                    <span class="course-location"></span>
+                                    <span class="course-professor"></span>
+                                </div>
+                            </div>
+                            <div class="grid-item-11 grid-item">
+                                <div class="course-information">
+                                    <h2 class="course-title"></h2>
+                                    <span class="course-location"></span>
+                                    <span class="course-professor"></span>
+                                </div>
+                            </div>
+                            <div class="grid-item-12 grid-item">
+                                <div class="course-information">
+                                    <h2 class="course-title"></h2>
+                                    <span class="course-location"></span>
+                                    <span class="course-professor"></span>
+                                </div>
+                            </div>
+                            <!-- THIRD ROW -->
+                            <div class="grid-item-13 grid-item">
+                                <span class="grid-hour">9:25AM - 10:40AM</span>
+                            </div>
+                            <div class="grid-item-14 grid-item">
+                                <div class="course-information">
+                                    <h2 class="course-title"></h2>
+                                    <span class="course-location"></span>
+                                    <span class="course-professor"></span>
+                                </div>
+                            </div>
+                            <div class="grid-item-15 grid-item">
+                                <div class="course-information">
+                                    <h2 class="course-title"></h2>
+                                    <span class="course-location"></span>
+                                    <span class="course-professor"></span>
+                                </div>
+                            </div>
+                            <div class="grid-item-16 grid-item">
+                                <div class="course-information">
+                                    <h2 class="course-title"></h2>
+                                    <span class="course-location"></span>
+                                    <span class="course-professor"></span>
+                                </div>
+                            </div>
+                            <div class="grid-item-17 grid-item">
+                                <div class="course-information">
+                                    <h2 class="course-title"></h2>
+                                    <span class="course-location"></span>
+                                    <span class="course-professor"></span>
+                                </div>
+                            </div>
+                            <div class="grid-item-18 grid-item">
+                                <div class="course-information">
+                                    <h2 class="course-title"></h2>
+                                    <span class="course-location"></span>
+                                    <span class="course-professor"></span>
+                                </div>
+                            </div>
+                            <!-- FOURTH ROW -->
+                            <div class="grid-item-19 grid-item">
+                                <span class="grid-hour">10:50AM - 12:05PM</span>
+                            </div>
+                            <div class="grid-item-20 grid-item">
+                                <div class="course-information">
+                                    <h2 class="course-title"></h2>
+                                    <span class="course-location"></span>
+                                    <span class="course-professor"></span>
+                                </div>
+                            </div>
+                            <div class="grid-item-21 grid-item">
+                                <div class="course-information">
+                                    <h2 class="course-title"></h2>
+                                    <span class="course-location"></span>
+                                    <span class="course-professor"></span>
+                                </div>
+                            </div>
+                            <div class="grid-item-22 grid-item">
+                                <div class="course-information">
+                                    <h2 class="course-title"></h2>
+                                    <span class="course-location"></span>
+                                    <span class="course-professor"></span>
+                                </div>
+                            </div>
+                            <div class="grid-item-23 grid-item">
+                                <div class="course-information">
+                                    <h2 class="course-title"></h2>
+                                    <span class="course-location"></span>
+                                    <span class="course-professor"></span>
+                                </div>
+                            </div>
+                            <div class="grid-item-24 grid-item">
+                                <div class="course-information">
+                                    <h2 class="course-title"></h2>
+                                    <span class="course-location"></span>
+                                    <span class="course-professor"></span>
+                                </div>
+                            </div>
+                            <!-- FIFTH ROW -->
+                            <div class="grid-item-20 grid-item">
+                                <span class="grid-hour">12:15PM - 1:30PM</span>
+                            </div>
+                            <div class="grid-item-21 grid-item">
+                                <div class="course-information">
+                                    <h2 class="course-title"></h2>
+                                    <span class="course-location"></span>
+                                    <span class="course-professor"></span>
+                                </div>
+                            </div>
+                            <div class="grid-item-22 grid-item">
+                                <div class="course-information">
+                                    <h2 class="course-title"></h2>
+                                    <span class="course-location"></span>
+                                    <span class="course-professor"></span>
+                                </div>
+                            </div>
+                            <div class="grid-item-23 grid-item">
+                                <div class="course-information">
+                                    <h2 class="course-title"></h2>
+                                    <span class="course-location"></span>
+                                    <span class="course-professor"></span>
+                                </div>
+                            </div>
+                            <div class="grid-item-24 grid-item">
+                                <div class="course-information">
+                                    <h2 class="course-title"></h2>
+                                    <span class="course-location"></span>
+                                    <span class="course-professor"></span>
+                                </div>
+                            </div>
+                            <div class="grid-item-25 grid-item">
+                                <div class="course-information">
+                                    <h2 class="course-title"></h2>
+                                    <span class="course-location"></span>
+                                    <span class="course-professor"></span>
+                                </div>
+                            </div>
+                            <!-- SIXTH ROW -->
+                            <div class="grid-item-26 grid-item">
+                                <span class="grid-hour">1:40PM - 2:55PM</span>
+                            </div>
+                            <div class="grid-item-27 grid-item">
+                                <div class="course-information">
+                                    <h2 class="course-title"></h2>
+                                    <span class="course-location"></span>
+                                    <span class="course-professor"></span>
+                                </div>
+                            </div>
+                            <div class="grid-item-28 grid-item">
+                                <div class="course-information">
+                                    <h2 class="course-title"></h2>
+                                    <span class="course-location"></span>
+                                    <span class="course-professor"></span>
+                                </div>
+                            </div>
+                            <div class="grid-item-29 grid-item">
+                                <div class="course-information">
+                                    <h2 class="course-title"></h2>
+                                    <span class="course-location"></span>
+                                    <span class="course-professor"></span>
+                                </div>
+                            </div>
+                            <div class="grid-item-30 grid-item">
+                                <div class="course-information">
+                                    <h2 class="course-title"></h2>
+                                    <span class="course-location"></span>
+                                    <span class="course-professor"></span>
+                                </div>
+                            </div>
+                            <div class="grid-item-31 grid-item">
+                                <div class="course-information">
+                                    <h2 class="course-title"></h2>
+                                    <span class="course-location"></span>
+                                    <span class="course-professor"></span>
+                                </div>
+                            </div>
+                            <!-- SEVENTH ROW -->
+                            <div class="grid-item-32 grid-item">
+                                <span class="grid-hour">3:05PM - 4:20PM</span>
+                            </div>
+                            <div class="grid-item-33 grid-item">
+                                <div class="course-information">
+                                    <h2 class="course-title"></h2>
+                                    <span class="course-location"></span>
+                                    <span class="course-professor"></span>
+                                </div>
+                            </div>
+                            <div class="grid-item-34 grid-item">
+                                <div class="course-information">
+                                    <h2 class="course-title"></h2>
+                                    <span class="course-location"></span>
+                                    <span class="course-professor"></span>
+                                </div>
+                            </div>
+                            <div class="grid-item-35 grid-item">
+                                <div class="course-information">
+                                    <h2 class="course-title"></h2>
+                                    <span class="course-location"></span>
+                                    <span class="course-professor"></span>
+                                </div>
+                            </div>
+                            <div class="grid-item-36 grid-item">
+                                <div class="course-information">
+                                    <h2 class="course-title"></h2>
+                                    <span class="course-location"></span>
+                                    <span class="course-professor"></span>
+                                </div>
+                            </div>
+                            <div class="grid-item-37 grid-item">
+                                <div class="course-information">
+                                    <h2 class="course-title"></h2>
+                                    <span class="course-location"></span>
+                                    <span class="course-professor"></span>
+                                </div>
+                            </div>
+                            <!-- EIGHT ROW -->
+                            <div class="grid-item-38 grid-item">
+                                <span class="grid-hour">4:30PM - 5:45PM</span>
+                            </div>
+                            <div class="grid-item-39 grid-item">
+                                <div class="course-information">
+                                    <h2 class="course-title"></h2>
+                                    <span class="course-location"></span>
+                                    <span class="course-professor"></span>
+                                </div>
+                            </div>
+                            <div class="grid-item-40 grid-item">
+                                <div class="course-information">
+                                    <h2 class="course-title"></h2>
+                                    <span class="course-location"></span>
+                                    <span class="course-professor"></span>
+                                </div>
+                            </div>
+                            <div class="grid-item-41 grid-item">
+                                <div class="course-information">
+                                    <h2 class="course-title"></h2>
+                                    <span class="course-location"></span>
+                                    <span class="course-professor"></span>
+                                </div>
+                            </div>
+                            <div class="grid-item-42 grid-item">
+                                <div class="course-information">
+                                    <h2 class="course-title"></h2>
+                                    <span class="course-location"></span>
+                                    <span class="course-professor"></span>
+                                </div>
+                            </div>
+                            <div class="grid-item-43 grid-item">
+                                <div class="course-information">
+                                    <h2 class="course-title"></h2>
+                                    <span class="course-location"></span>
+                                    <span class="course-professor"></span>
+                                </div>
+                            </div>
+                            <!-- NINTH ROW -->
+                            <div class="grid-item-44 grid-item">
+                                <span class="grid-hour">5:55PM - 7:10PM</span>
+                            </div>
+                            <div class="grid-item-45 grid-item">
+                                <div class="course-information">
+                                    <h2 class="course-title"></h2>
+                                    <span class="course-location"></span>
+                                    <span class="course-professor"></span>
+                                </div>
+                            </div>
+                            <div class="grid-item-46 grid-item">
+                                <div class="course-information">
+                                    <h2 class="course-title"></h2>
+                                    <span class="course-location"></span>
+                                    <span class="course-professor"></span>
+                                </div>
+                            </div>
+                            <div class="grid-item-47 grid-item">
+                                <div class="course-information">
+                                    <h2 class="course-title"></h2>
+                                    <span class="course-location"></span>
+                                    <span class="course-professor"></span>
+                                </div>
+                            </div>
+                            <div class="grid-item-48 grid-item">
+                                <div class="course-information">
+                                    <h2 class="course-title"></h2>
+                                    <span class="course-location"></span>
+                                    <span class="course-professor"></span>
+                                </div>
+                            </div>
+                            <div class="grid-item-49 grid-item"></div>
+                            <!-- TENTH ROW -->
+                            <div class="grid-item-50 grid-item">
+                                <span class="grid-hour">7:20 - 8:35PM</span>
+                            </div>
+                            <div class="grid-item-51 grid-item">
+                                <div class="course-information">
+                                    <h2 class="course-title"></h2>
+                                    <span class="course-location"></span>
+                                    <span class="course-professor"></span>
+                                </div>
+                            </div>
+                            <div class="grid-item-52 grid-item">
+                                <div class="course-information">
+                                    <h2 class="course-title"></h2>
+                                    <span class="course-location"></span>
+                                    <span class="course-professor"></span>
+                                </div>
+                            </div>
+                            <div class="grid-item-53 grid-item">
+                                <div class="course-information">
+                                    <h2 class="course-title"></h2>
+                                    <span class="course-location"></span>
+                                    <span class="course-professor"></span>
+                                </div>
+                            </div>
+                            <div class="grid-item-54 grid-item">
+                                <div class="course-information">
+                                    <h2 class="course-title"></h2>
+                                    <span class="course-location"></span>
+                                    <span class="course-professor"></span>
+                                </div>
+                            </div>
+                            <div class="grid-item-55 grid-item">
+                                <div class="course-information">
+                                    <h2 class="course-title"></h2>
+                                    <span class="course-location"></span>
+                                    <span class="course-professor"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="split">
-                    <!-- LEFT SIDE -->
-                    <div class="left schedule-container">
-                        <div class="schedule schedule-1 active-schedule" data-tab-schedule>
+                <div class="left schedule-container">
+                    <div class="schedule" data-tab-schedule>
+                        <div class="schedule schedule-2" data-tab-schedule>
                             <div class="schedule-grid">
                                 <!-- FIRST ROW -->
                                 <div class="grid-item-1 grid-item">
@@ -357,7 +730,13 @@
                                         <span class="course-professor"></span>
                                     </div>
                                 </div>
-                                <div class="grid-item-49 grid-item"></div>
+                                <div class="grid-item-49 grid-item">
+                                    <div class="course-information">
+                                        <h2 class="course-title"></h2>
+                                        <span class="course-location"></span>
+                                        <span class="course-professor"></span>
+                                    </div>
+                                </div>
                                 <!-- TENTH ROW -->
                                 <div class="grid-item-50 grid-item">
                                     <span class="grid-hour">7:20 - 8:35PM</span>
@@ -400,847 +779,472 @@
                             </div>
                         </div>
                     </div>
-                    <div class="left schedule-container">
-                        <div class="schedule" data-tab-schedule>
-                            <div class="schedule schedule-2" data-tab-schedule>
-                                <div class="schedule-grid">
-                                    <!-- FIRST ROW -->
-                                    <div class="grid-item-1 grid-item">
-                                        <!-- This div will be empty -->
-                                    </div>
-                                    <div class="grid-item-2 grid-item">
-                                        <span class="schedule-day">Monday</span>
-                                    </div>
-                                    <div class="grid-item-3 grid-item">
-                                        <span class="schedule-day">Tuesday</span>
-                                    </div>
-                                    <div class="grid-item-4 grid-item">
-                                        <span class="schedule-day">Wednesday</span>
-                                    </div>
-                                    <div class="grid-item-5 grid-item">
-                                        <span class="schedule-day">Thursday</span>
-                                    </div>
-                                    <div class="grid-item-6 grid-item">
-                                        <span class="schedule-day">Friday</span>
-                                    </div>
-                                    <!-- SECOND ROW -->
-                                    <div class="grid-item-7 grid-item">
-                                        <span class="grid-hour">8:00AM - 9:15AM</span>
-                                    </div>
-                                    <div class="grid-item-8 grid-item">
-                                        <div class="course-information">
-                                            <h2 class="course-title"></h2>
-                                            <span class="course-location"></span>
-                                            <span class="course-professor"></span>
-                                        </div>
-                                    </div>
-                                    <div class="grid-item-9 grid-item">
-                                        <div class="course-information">
-                                            <h2 class="course-title"></h2>
-                                            <span class="course-location"></span>
-                                            <span class="course-professor"></span>
-                                        </div>
-                                    </div>
-                                    <div class="grid-item-10 grid-item">
-                                        <div class="course-information">
-                                            <h2 class="course-title"></h2>
-                                            <span class="course-location"></span>
-                                            <span class="course-professor"></span>
-                                        </div>
-                                    </div>
-                                    <div class="grid-item-11 grid-item">
-                                        <div class="course-information">
-                                            <h2 class="course-title"></h2>
-                                            <span class="course-location"></span>
-                                            <span class="course-professor"></span>
-                                        </div>
-                                    </div>
-                                    <div class="grid-item-12 grid-item">
-                                        <div class="course-information">
-                                            <h2 class="course-title"></h2>
-                                            <span class="course-location"></span>
-                                            <span class="course-professor"></span>
-                                        </div>
-                                    </div>
-                                    <!-- THIRD ROW -->
-                                    <div class="grid-item-13 grid-item">
-                                        <span class="grid-hour">9:25AM - 10:40AM</span>
-                                    </div>
-                                    <div class="grid-item-14 grid-item">
-                                        <div class="course-information">
-                                            <h2 class="course-title"></h2>
-                                            <span class="course-location"></span>
-                                            <span class="course-professor"></span>
-                                        </div>
-                                    </div>
-                                    <div class="grid-item-15 grid-item">
-                                        <div class="course-information">
-                                            <h2 class="course-title"></h2>
-                                            <span class="course-location"></span>
-                                            <span class="course-professor"></span>
-                                        </div>
-                                    </div>
-                                    <div class="grid-item-16 grid-item">
-                                        <div class="course-information">
-                                            <h2 class="course-title"></h2>
-                                            <span class="course-location"></span>
-                                            <span class="course-professor"></span>
-                                        </div>
-                                    </div>
-                                    <div class="grid-item-17 grid-item">
-                                        <div class="course-information">
-                                            <h2 class="course-title"></h2>
-                                            <span class="course-location"></span>
-                                            <span class="course-professor"></span>
-                                        </div>
-                                    </div>
-                                    <div class="grid-item-18 grid-item">
-                                        <div class="course-information">
-                                            <h2 class="course-title"></h2>
-                                            <span class="course-location"></span>
-                                            <span class="course-professor"></span>
-                                        </div>
-                                    </div>
-                                    <!-- FOURTH ROW -->
-                                    <div class="grid-item-19 grid-item">
-                                        <span class="grid-hour">10:50AM - 12:05PM</span>
-                                    </div>
-                                    <div class="grid-item-20 grid-item">
-                                        <div class="course-information">
-                                            <h2 class="course-title"></h2>
-                                            <span class="course-location"></span>
-                                            <span class="course-professor"></span>
-                                        </div>
-                                    </div>
-                                    <div class="grid-item-21 grid-item">
-                                        <div class="course-information">
-                                            <h2 class="course-title"></h2>
-                                            <span class="course-location"></span>
-                                            <span class="course-professor"></span>
-                                        </div>
-                                    </div>
-                                    <div class="grid-item-22 grid-item">
-                                        <div class="course-information">
-                                            <h2 class="course-title"></h2>
-                                            <span class="course-location"></span>
-                                            <span class="course-professor"></span>
-                                        </div>
-                                    </div>
-                                    <div class="grid-item-23 grid-item">
-                                        <div class="course-information">
-                                            <h2 class="course-title"></h2>
-                                            <span class="course-location"></span>
-                                            <span class="course-professor"></span>
-                                        </div>
-                                    </div>
-                                    <div class="grid-item-24 grid-item">
-                                        <div class="course-information">
-                                            <h2 class="course-title"></h2>
-                                            <span class="course-location"></span>
-                                            <span class="course-professor"></span>
-                                        </div>
-                                    </div>
-                                    <!-- FIFTH ROW -->
-                                    <div class="grid-item-20 grid-item">
-                                        <span class="grid-hour">12:15PM - 1:30PM</span>
-                                    </div>
-                                    <div class="grid-item-21 grid-item">
-                                        <div class="course-information">
-                                            <h2 class="course-title"></h2>
-                                            <span class="course-location"></span>
-                                            <span class="course-professor"></span>
-                                        </div>
-                                    </div>
-                                    <div class="grid-item-22 grid-item">
-                                        <div class="course-information">
-                                            <h2 class="course-title"></h2>
-                                            <span class="course-location"></span>
-                                            <span class="course-professor"></span>
-                                        </div>
-                                    </div>
-                                    <div class="grid-item-23 grid-item">
-                                        <div class="course-information">
-                                            <h2 class="course-title"></h2>
-                                            <span class="course-location"></span>
-                                            <span class="course-professor"></span>
-                                        </div>
-                                    </div>
-                                    <div class="grid-item-24 grid-item">
-                                        <div class="course-information">
-                                            <h2 class="course-title"></h2>
-                                            <span class="course-location"></span>
-                                            <span class="course-professor"></span>
-                                        </div>
-                                    </div>
-                                    <div class="grid-item-25 grid-item">
-                                        <div class="course-information">
-                                            <h2 class="course-title"></h2>
-                                            <span class="course-location"></span>
-                                            <span class="course-professor"></span>
-                                        </div>
-                                    </div>
-                                    <!-- SIXTH ROW -->
-                                    <div class="grid-item-26 grid-item">
-                                        <span class="grid-hour">1:40PM - 2:55PM</span>
-                                    </div>
-                                    <div class="grid-item-27 grid-item">
-                                        <div class="course-information">
-                                            <h2 class="course-title"></h2>
-                                            <span class="course-location"></span>
-                                            <span class="course-professor"></span>
-                                        </div>
-                                    </div>
-                                    <div class="grid-item-28 grid-item">
-                                        <div class="course-information">
-                                            <h2 class="course-title"></h2>
-                                            <span class="course-location"></span>
-                                            <span class="course-professor"></span>
-                                        </div>
-                                    </div>
-                                    <div class="grid-item-29 grid-item">
-                                        <div class="course-information">
-                                            <h2 class="course-title"></h2>
-                                            <span class="course-location"></span>
-                                            <span class="course-professor"></span>
-                                        </div>
-                                    </div>
-                                    <div class="grid-item-30 grid-item">
-                                        <div class="course-information">
-                                            <h2 class="course-title"></h2>
-                                            <span class="course-location"></span>
-                                            <span class="course-professor"></span>
-                                        </div>
-                                    </div>
-                                    <div class="grid-item-31 grid-item">
-                                        <div class="course-information">
-                                            <h2 class="course-title"></h2>
-                                            <span class="course-location"></span>
-                                            <span class="course-professor"></span>
-                                        </div>
-                                    </div>
-                                    <!-- SEVENTH ROW -->
-                                    <div class="grid-item-32 grid-item">
-                                        <span class="grid-hour">3:05PM - 4:20PM</span>
-                                    </div>
-                                    <div class="grid-item-33 grid-item">
-                                        <div class="course-information">
-                                            <h2 class="course-title"></h2>
-                                            <span class="course-location"></span>
-                                            <span class="course-professor"></span>
-                                        </div>
-                                    </div>
-                                    <div class="grid-item-34 grid-item">
-                                        <div class="course-information">
-                                            <h2 class="course-title"></h2>
-                                            <span class="course-location"></span>
-                                            <span class="course-professor"></span>
-                                        </div>
-                                    </div>
-                                    <div class="grid-item-35 grid-item">
-                                        <div class="course-information">
-                                            <h2 class="course-title"></h2>
-                                            <span class="course-location"></span>
-                                            <span class="course-professor"></span>
-                                        </div>
-                                    </div>
-                                    <div class="grid-item-36 grid-item">
-                                        <div class="course-information">
-                                            <h2 class="course-title"></h2>
-                                            <span class="course-location"></span>
-                                            <span class="course-professor"></span>
-                                        </div>
-                                    </div>
-                                    <div class="grid-item-37 grid-item">
-                                        <div class="course-information">
-                                            <h2 class="course-title"></h2>
-                                            <span class="course-location"></span>
-                                            <span class="course-professor"></span>
-                                        </div>
-                                    </div>
-                                    <!-- EIGHT ROW -->
-                                    <div class="grid-item-38 grid-item">
-                                        <span class="grid-hour">4:30PM - 5:45PM</span>
-                                    </div>
-                                    <div class="grid-item-39 grid-item">
-                                        <div class="course-information">
-                                            <h2 class="course-title"></h2>
-                                            <span class="course-location"></span>
-                                            <span class="course-professor"></span>
-                                        </div>
-                                    </div>
-                                    <div class="grid-item-40 grid-item">
-                                        <div class="course-information">
-                                            <h2 class="course-title"></h2>
-                                            <span class="course-location"></span>
-                                            <span class="course-professor"></span>
-                                        </div>
-                                    </div>
-                                    <div class="grid-item-41 grid-item">
-                                        <div class="course-information">
-                                            <h2 class="course-title"></h2>
-                                            <span class="course-location"></span>
-                                            <span class="course-professor"></span>
-                                        </div>
-                                    </div>
-                                    <div class="grid-item-42 grid-item">
-                                        <div class="course-information">
-                                            <h2 class="course-title"></h2>
-                                            <span class="course-location"></span>
-                                            <span class="course-professor"></span>
-                                        </div>
-                                    </div>
-                                    <div class="grid-item-43 grid-item">
-                                        <div class="course-information">
-                                            <h2 class="course-title"></h2>
-                                            <span class="course-location"></span>
-                                            <span class="course-professor"></span>
-                                        </div>
-                                    </div>
-                                    <!-- NINTH ROW -->
-                                    <div class="grid-item-44 grid-item">
-                                        <span class="grid-hour">5:55PM - 7:10PM</span>
-                                    </div>
-                                    <div class="grid-item-45 grid-item">
-                                        <div class="course-information">
-                                            <h2 class="course-title"></h2>
-                                            <span class="course-location"></span>
-                                            <span class="course-professor"></span>
-                                        </div>
-                                    </div>
-                                    <div class="grid-item-46 grid-item">
-                                        <div class="course-information">
-                                            <h2 class="course-title"></h2>
-                                            <span class="course-location"></span>
-                                            <span class="course-professor"></span>
-                                        </div>
-                                    </div>
-                                    <div class="grid-item-47 grid-item">
-                                        <div class="course-information">
+                </div>
+                <div class="left schedule-container">
+                    <div class="schedule" data-tab-schedule>
+                        <div class="schedule schedule-2" data-tab-schedule>
+                            <div class="schedule-grid">
+                                <!-- FIRST ROW -->
+                                <div class="grid-item-1 grid-item">
+                                    <!-- This div will be empty -->
+                                </div>
+                                <div class="grid-item-2 grid-item">
+                                    <span class="schedule-day">Monday</span>
+                                </div>
+                                <div class="grid-item-3 grid-item">
+                                    <span class="schedule-day">Tuesday</span>
+                                </div>
+                                <div class="grid-item-4 grid-item">
+                                    <span class="schedule-day">Wednesday</span>
+                                </div>
+                                <div class="grid-item-5 grid-item">
+                                    <span class="schedule-day">Thursday</span>
+                                </div>
+                                <div class="grid-item-6 grid-item">
+                                    <span class="schedule-day">Friday</span>
+                                </div>
+                                <!-- SECOND ROW -->
+                                <div class="grid-item-7 grid-item">
+                                    <span class="grid-hour">8:00AM - 9:15AM</span>
+                                </div>
+                                <div class="grid-item-8 grid-item">
+                                    <div class="course-information">
                                         <h2 class="course-title"></h2>
                                         <span class="course-location"></span>
                                         <span class="course-professor"></span>
                                     </div>
-                                    </div>
-                                    <div class="grid-item-48 grid-item">
-                                        <div class="course-information">
+                                </div>
+                                <div class="grid-item-9 grid-item">
+                                    <div class="course-information">
                                         <h2 class="course-title"></h2>
                                         <span class="course-location"></span>
                                         <span class="course-professor"></span>
                                     </div>
-                                    </div>
-                                    <div class="grid-item-49 grid-item">
-                                        <div class="course-information">
+                                </div>
+                                <div class="grid-item-10 grid-item">
+                                    <div class="course-information">
                                         <h2 class="course-title"></h2>
                                         <span class="course-location"></span>
                                         <span class="course-professor"></span>
                                     </div>
-                                    </div>
-                                    <!-- TENTH ROW -->
-                                    <div class="grid-item-50 grid-item">
-                                        <span class="grid-hour">7:20 - 8:35PM</span>
-                                    </div>
-                                    <div class="grid-item-51 grid-item">
-                                        <div class="course-information">
-                                            <h2 class="course-title"></h2>
-                                            <span class="course-location"></span>
-                                            <span class="course-professor"></span>
-                                        </div>
-                                    </div>
-                                    <div class="grid-item-52 grid-item">
-                                        <div class="course-information">
+                                </div>
+                                <div class="grid-item-11 grid-item">
+                                    <div class="course-information">
                                         <h2 class="course-title"></h2>
                                         <span class="course-location"></span>
                                         <span class="course-professor"></span>
                                     </div>
-                                    </div>
-                                    <div class="grid-item-53 grid-item">
-                                        <div class="course-information">
+                                </div>
+                                <div class="grid-item-12 grid-item">
+                                    <div class="course-information">
                                         <h2 class="course-title"></h2>
                                         <span class="course-location"></span>
                                         <span class="course-professor"></span>
                                     </div>
-                                    </div>
-                                    <div class="grid-item-54 grid-item">
-                                        <div class="course-information">
+                                </div>
+                                <!-- THIRD ROW -->
+                                <div class="grid-item-13 grid-item">
+                                    <span class="grid-hour">9:25AM - 10:40AM</span>
+                                </div>
+                                <div class="grid-item-14 grid-item">
+                                    <div class="course-information">
                                         <h2 class="course-title"></h2>
                                         <span class="course-location"></span>
                                         <span class="course-professor"></span>
                                     </div>
-                                    </div>
-                                    <div class="grid-item-55 grid-item">
-                                        <div class="course-information">
+                                </div>
+                                <div class="grid-item-15 grid-item">
+                                    <div class="course-information">
                                         <h2 class="course-title"></h2>
                                         <span class="course-location"></span>
                                         <span class="course-professor"></span>
                                     </div>
+                                </div>
+                                <div class="grid-item-16 grid-item">
+                                    <div class="course-information">
+                                        <h2 class="course-title"></h2>
+                                        <span class="course-location"></span>
+                                        <span class="course-professor"></span>
+                                    </div>
+                                </div>
+                                <div class="grid-item-17 grid-item">
+                                    <div class="course-information">
+                                        <h2 class="course-title"></h2>
+                                        <span class="course-location"></span>
+                                        <span class="course-professor"></span>
+                                    </div>
+                                </div>
+                                <div class="grid-item-18 grid-item">
+                                    <div class="course-information">
+                                        <h2 class="course-title"></h2>
+                                        <span class="course-location"></span>
+                                        <span class="course-professor"></span>
+                                    </div>
+                                </div>
+                                <!-- FOURTH ROW -->
+                                <div class="grid-item-19 grid-item">
+                                    <span class="grid-hour">10:50AM - 12:05PM</span>
+                                </div>
+                                <div class="grid-item-20 grid-item">
+                                    <div class="course-information">
+                                        <h2 class="course-title"></h2>
+                                        <span class="course-location"></span>
+                                        <span class="course-professor"></span>
+                                    </div>
+                                </div>
+                                <div class="grid-item-21 grid-item">
+                                    <div class="course-information">
+                                        <h2 class="course-title"></h2>
+                                        <span class="course-location"></span>
+                                        <span class="course-professor"></span>
+                                    </div>
+                                </div>
+                                <div class="grid-item-22 grid-item">
+                                    <div class="course-information">
+                                        <h2 class="course-title"></h2>
+                                        <span class="course-location"></span>
+                                        <span class="course-professor"></span>
+                                    </div>
+                                </div>
+                                <div class="grid-item-23 grid-item">
+                                    <div class="course-information">
+                                        <h2 class="course-title"></h2>
+                                        <span class="course-location"></span>
+                                        <span class="course-professor"></span>
+                                    </div>
+                                </div>
+                                <div class="grid-item-24 grid-item">
+                                    <div class="course-information">
+                                        <h2 class="course-title"></h2>
+                                        <span class="course-location"></span>
+                                        <span class="course-professor"></span>
+                                    </div>
+                                </div>
+                                <!-- FIFTH ROW -->
+                                <div class="grid-item-20 grid-item">
+                                    <span class="grid-hour">12:15PM - 1:30PM</span>
+                                </div>
+                                <div class="grid-item-21 grid-item">
+                                    <div class="course-information">
+                                        <h2 class="course-title"></h2>
+                                        <span class="course-location"></span>
+                                        <span class="course-professor"></span>
+                                    </div>
+                                </div>
+                                <div class="grid-item-22 grid-item">
+                                    <div class="course-information">
+                                        <h2 class="course-title"></h2>
+                                        <span class="course-location"></span>
+                                        <span class="course-professor"></span>
+                                    </div>
+                                </div>
+                                <div class="grid-item-23 grid-item">
+                                    <div class="course-information">
+                                        <h2 class="course-title"></h2>
+                                        <span class="course-location"></span>
+                                        <span class="course-professor"></span>
+                                    </div>
+                                </div>
+                                <div class="grid-item-24 grid-item">
+                                    <div class="course-information">
+                                        <h2 class="course-title"></h2>
+                                        <span class="course-location"></span>
+                                        <span class="course-professor"></span>
+                                    </div>
+                                </div>
+                                <div class="grid-item-25 grid-item">
+                                    <div class="course-information">
+                                        <h2 class="course-title"></h2>
+                                        <span class="course-location"></span>
+                                        <span class="course-professor"></span>
+                                    </div>
+                                </div>
+                                <!-- SIXTH ROW -->
+                                <div class="grid-item-26 grid-item">
+                                    <span class="grid-hour">1:40PM - 2:55PM</span>
+                                </div>
+                                <div class="grid-item-27 grid-item">
+                                    <div class="course-information">
+                                        <h2 class="course-title"></h2>
+                                        <span class="course-location"></span>
+                                        <span class="course-professor"></span>
+                                    </div>
+                                </div>
+                                <div class="grid-item-28 grid-item">
+                                    <div class="course-information">
+                                        <h2 class="course-title"></h2>
+                                        <span class="course-location"></span>
+                                        <span class="course-professor"></span>
+                                    </div>
+                                </div>
+                                <div class="grid-item-29 grid-item">
+                                    <div class="course-information">
+                                        <h2 class="course-title"></h2>
+                                        <span class="course-location"></span>
+                                        <span class="course-professor"></span>
+                                    </div>
+                                </div>
+                                <div class="grid-item-30 grid-item">
+                                    <div class="course-information">
+                                        <h2 class="course-title"></h2>
+                                        <span class="course-location"></span>
+                                        <span class="course-professor"></span>
+                                    </div>
+                                </div>
+                                <div class="grid-item-31 grid-item">
+                                    <div class="course-information">
+                                        <h2 class="course-title"></h2>
+                                        <span class="course-location"></span>
+                                        <span class="course-professor"></span>
+                                    </div>
+                                </div>
+                                <!-- SEVENTH ROW -->
+                                <div class="grid-item-32 grid-item">
+                                    <span class="grid-hour">3:05PM - 4:20PM</span>
+                                </div>
+                                <div class="grid-item-33 grid-item">
+                                    <div class="course-information">
+                                        <h2 class="course-title"></h2>
+                                        <span class="course-location"></span>
+                                        <span class="course-professor"></span>
+                                    </div>
+                                </div>
+                                <div class="grid-item-34 grid-item">
+                                    <div class="course-information">
+                                        <h2 class="course-title"></h2>
+                                        <span class="course-location"></span>
+                                        <span class="course-professor"></span>
+                                    </div>
+                                </div>
+                                <div class="grid-item-35 grid-item">
+                                    <div class="course-information">
+                                        <h2 class="course-title"></h2>
+                                        <span class="course-location"></span>
+                                        <span class="course-professor"></span>
+                                    </div>
+                                </div>
+                                <div class="grid-item-36 grid-item">
+                                    <div class="course-information">
+                                        <h2 class="course-title"></h2>
+                                        <span class="course-location"></span>
+                                        <span class="course-professor"></span>
+                                    </div>
+                                </div>
+                                <div class="grid-item-37 grid-item">
+                                    <div class="course-information">
+                                        <h2 class="course-title"></h2>
+                                        <span class="course-location"></span>
+                                        <span class="course-professor"></span>
+                                    </div>
+                                </div>
+                                <!-- EIGHT ROW -->
+                                <div class="grid-item-38 grid-item">
+                                    <span class="grid-hour">4:30PM - 5:45PM</span>
+                                </div>
+                                <div class="grid-item-39 grid-item">
+                                    <div class="course-information">
+                                        <h2 class="course-title"></h2>
+                                        <span class="course-location"></span>
+                                        <span class="course-professor"></span>
+                                    </div>
+                                </div>
+                                <div class="grid-item-40 grid-item">
+                                    <div class="course-information">
+                                        <h2 class="course-title"></h2>
+                                        <span class="course-location"></span>
+                                        <span class="course-professor"></span>
+                                    </div>
+                                </div>
+                                <div class="grid-item-41 grid-item">
+                                    <div class="course-information">
+                                        <h2 class="course-title"></h2>
+                                        <span class="course-location"></span>
+                                        <span class="course-professor"></span>
+                                    </div>
+                                </div>
+                                <div class="grid-item-42 grid-item">
+                                    <div class="course-information">
+                                        <h2 class="course-title"></h2>
+                                        <span class="course-location"></span>
+                                        <span class="course-professor"></span>
+                                    </div>
+                                </div>
+                                <div class="grid-item-43 grid-item">
+                                    <div class="course-information">
+                                        <h2 class="course-title"></h2>
+                                        <span class="course-location"></span>
+                                        <span class="course-professor"></span>
+                                    </div>
+                                </div>
+                                <!-- NINTH ROW -->
+                                <div class="grid-item-44 grid-item">
+                                    <span class="grid-hour">5:55PM - 7:10PM</span>
+                                </div>
+                                <div class="grid-item-45 grid-item">
+                                    <div class="course-information">
+                                        <h2 class="course-title"></h2>
+                                        <span class="course-location"></span>
+                                        <span class="course-professor"></span>
+                                    </div>
+                                </div>
+                                <div class="grid-item-46 grid-item">
+                                    <div class="course-information">
+                                        <h2 class="course-title"></h2>
+                                        <span class="course-location"></span>
+                                        <span class="course-professor"></span>
+                                    </div>
+                                </div>
+                                <div class="grid-item-47 grid-item">
+                                    <div class="course-information">
+                                        <h2 class="course-title"></h2>
+                                        <span class="course-location"></span>
+                                        <span class="course-professor"></span>
+                                    </div>
+                                </div>
+                                <div class="grid-item-48 grid-item">
+                                    <div class="course-information">
+                                        <h2 class="course-title"></h2>
+                                        <span class="course-location"></span>
+                                        <span class="course-professor"></span>
+                                    </div>
+                                </div>
+                                <div class="grid-item-49 grid-item">
+                                    <div class="course-information">
+                                        <h2 class="course-title"></h2>
+                                        <span class="course-location"></span>
+                                        <span class="course-professor"></span>
+                                    </div>
+                                </div>
+                                <!-- TENTH ROW -->
+                                <div class="grid-item-50 grid-item">
+                                    <span class="grid-hour">7:20 - 8:35PM</span>
+                                </div>
+                                <div class="grid-item-51 grid-item">
+                                    <div class="course-information">
+                                        <h2 class="course-title"></h2>
+                                        <span class="course-location"></span>
+                                        <span class="course-professor"></span>
+                                    </div>
+                                </div>
+                                <div class="grid-item-52 grid-item">
+                                    <div class="course-information">
+                                        <h2 class="course-title"></h2>
+                                        <span class="course-location"></span>
+                                        <span class="course-professor"></span>
+                                    </div>
+                                </div>
+                                <div class="grid-item-53 grid-item">
+                                    <div class="course-information">
+                                        <h2 class="course-title"></h2>
+                                        <span class="course-location"></span>
+                                        <span class="course-professor"></span>
+                                    </div>
+                                </div>
+                                <div class="grid-item-54 grid-item">
+                                    <div class="course-information">
+                                        <h2 class="course-title"></h2>
+                                        <span class="course-location"></span>
+                                        <span class="course-professor"></span>
+                                    </div>
+                                </div>
+                                <div class="grid-item-55 grid-item">
+                                    <div class="course-information">
+                                        <h2 class="course-title"></h2>
+                                        <span class="course-location"></span>
+                                        <span class="course-professor"></span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="left schedule-container">
-                        <div class="schedule" data-tab-schedule>
-                            <div class="schedule schedule-2" data-tab-schedule>
-                                <div class="schedule-grid">
-                                    <!-- FIRST ROW -->
-                                    <div class="grid-item-1 grid-item">
-                                        <!-- This div will be empty -->
-                                    </div>
-                                    <div class="grid-item-2 grid-item">
-                                        <span class="schedule-day">Monday</span>
-                                    </div>
-                                    <div class="grid-item-3 grid-item">
-                                        <span class="schedule-day">Tuesday</span>
-                                    </div>
-                                    <div class="grid-item-4 grid-item">
-                                        <span class="schedule-day">Wednesday</span>
-                                    </div>
-                                    <div class="grid-item-5 grid-item">
-                                        <span class="schedule-day">Thursday</span>
-                                    </div>
-                                    <div class="grid-item-6 grid-item">
-                                        <span class="schedule-day">Friday</span>
-                                    </div>
-                                    <!-- SECOND ROW -->
-                                    <div class="grid-item-7 grid-item">
-                                        <span class="grid-hour">8:00AM - 9:15AM</span>
-                                    </div>
-                                    <div class="grid-item-8 grid-item">
-                                        <div class="course-information">
-                                            <h2 class="course-title"></h2>
-                                            <span class="course-location"></span>
-                                            <span class="course-professor"></span>
-                                        </div>
-                                    </div>
-                                    <div class="grid-item-9 grid-item">
-                                        <div class="course-information">
-                                        <h2 class="course-title"></h2>
-                                        <span class="course-location"></span>
-                                        <span class="course-professor"></span>
-                                    </div>
-                                    </div>
-                                    <div class="grid-item-10 grid-item">
-                                        <div class="course-information">
-                                        <h2 class="course-title"></h2>
-                                        <span class="course-location"></span>
-                                        <span class="course-professor"></span>
-                                    </div>
-                                    </div>
-                                    <div class="grid-item-11 grid-item">
-                                        <div class="course-information">
-                                        <h2 class="course-title"></h2>
-                                        <span class="course-location"></span>
-                                        <span class="course-professor"></span>
-                                    </div>
-                                    </div>
-                                    <div class="grid-item-12 grid-item">
-                                        <div class="course-information">
-                                        <h2 class="course-title"></h2>
-                                        <span class="course-location"></span>
-                                        <span class="course-professor"></span>
-                                    </div>
-                                    </div>
-                                    <!-- THIRD ROW -->
-                                    <div class="grid-item-13 grid-item">
-                                        <span class="grid-hour">9:25AM - 10:40AM</span>
-                                    </div>
-                                    <div class="grid-item-14 grid-item">
-                                        <div class="course-information">
-                                            <h2 class="course-title"></h2>
-                                            <span class="course-location"></span>
-                                            <span class="course-professor"></span>
-                                        </div>
-                                    </div>
-                                    <div class="grid-item-15 grid-item">
-                                        <div class="course-information">
-                                        <h2 class="course-title"></h2>
-                                        <span class="course-location"></span>
-                                        <span class="course-professor"></span>
-                                    </div>
-                                    </div>
-                                    <div class="grid-item-16 grid-item">
-                                        <div class="course-information">
-                                        <h2 class="course-title"></h2>
-                                        <span class="course-location"></span>
-                                        <span class="course-professor"></span>
-                                    </div>
-                                    </div>
-                                    <div class="grid-item-17 grid-item">
-                                        <div class="course-information">
-                                        <h2 class="course-title"></h2>
-                                        <span class="course-location"></span>
-                                        <span class="course-professor"></span>
-                                    </div>
-                                    </div>
-                                    <div class="grid-item-18 grid-item">
-                                        <div class="course-information">
-                                        <h2 class="course-title"></h2>
-                                        <span class="course-location"></span>
-                                        <span class="course-professor"></span>
-                                    </div>
-                                    </div>
-                                    <!-- FOURTH ROW -->
-                                    <div class="grid-item-19 grid-item">
-                                        <span class="grid-hour">10:50AM - 12:05PM</span>
-                                    </div>
-                                    <div class="grid-item-20 grid-item">
-                                        <div class="course-information">
-                                            <h2 class="course-title"></h2>
-                                            <span class="course-location"></span>
-                                            <span class="course-professor"></span>
-                                        </div>
-                                    </div>
-                                    <div class="grid-item-21 grid-item">
-                                        <div class="course-information">
-                                        <h2 class="course-title"></h2>
-                                        <span class="course-location"></span>
-                                        <span class="course-professor"></span>
-                                    </div>
-                                    </div>
-                                    <div class="grid-item-22 grid-item">
-                                        <div class="course-information">
-                                        <h2 class="course-title"></h2>
-                                        <span class="course-location"></span>
-                                        <span class="course-professor"></span>
-                                    </div>
-                                    </div>
-                                    <div class="grid-item-23 grid-item">
-                                        <div class="course-information">
-                                        <h2 class="course-title"></h2>
-                                        <span class="course-location"></span>
-                                        <span class="course-professor"></span>
-                                    </div>
-                                    </div>
-                                    <div class="grid-item-24 grid-item">
-                                        <div class="course-information">
-                                        <h2 class="course-title"></h2>
-                                        <span class="course-location"></span>
-                                        <span class="course-professor"></span>
-                                    </div>
-                                    </div>
-                                    <!-- FIFTH ROW -->
-                                    <div class="grid-item-20 grid-item">
-                                        <span class="grid-hour">12:15PM - 1:30PM</span>
-                                    </div>
-                                    <div class="grid-item-21 grid-item">
-                                        <div class="course-information">
-                                            <h2 class="course-title"></h2>
-                                            <span class="course-location"></span>
-                                            <span class="course-professor"></span>
-                                        </div>
-                                    </div>
-                                    <div class="grid-item-22 grid-item">
-                                        <div class="course-information">
-                                        <h2 class="course-title"></h2>
-                                        <span class="course-location"></span>
-                                        <span class="course-professor"></span>
-                                    </div>
-                                    </div>
-                                    <div class="grid-item-23 grid-item">
-                                        <div class="course-information">
-                                        <h2 class="course-title"></h2>
-                                        <span class="course-location"></span>
-                                        <span class="course-professor"></span>
-                                    </div>
-                                    </div>
-                                    <div class="grid-item-24 grid-item">
-                                        <div class="course-information">
-                                        <h2 class="course-title"></h2>
-                                        <span class="course-location"></span>
-                                        <span class="course-professor"></span>
-                                    </div>
-                                    </div>
-                                    <div class="grid-item-25 grid-item">
-                                        <div class="course-information">
-                                        <h2 class="course-title"></h2>
-                                        <span class="course-location"></span>
-                                        <span class="course-professor"></span>
-                                    </div>
-                                    </div>
-                                    <!-- SIXTH ROW -->
-                                    <div class="grid-item-26 grid-item">
-                                        <span class="grid-hour">1:40PM - 2:55PM</span>
-                                    </div>
-                                    <div class="grid-item-27 grid-item">
-                                        <div class="course-information">
-                                            <h2 class="course-title"></h2>
-                                            <span class="course-location"></span>
-                                            <span class="course-professor"></span>
-                                        </div>
-                                    </div>
-                                    <div class="grid-item-28 grid-item">
-                                        <div class="course-information">
-                                        <h2 class="course-title"></h2>
-                                        <span class="course-location"></span>
-                                        <span class="course-professor"></span>
-                                    </div>
-                                    </div>
-                                    <div class="grid-item-29 grid-item">
-                                        <div class="course-information">
-                                        <h2 class="course-title"></h2>
-                                        <span class="course-location"></span>
-                                        <span class="course-professor"></span>
-                                    </div>
-                                    </div>
-                                    <div class="grid-item-30 grid-item">
-                                        <div class="course-information">
-                                        <h2 class="course-title"></h2>
-                                        <span class="course-location"></span>
-                                        <span class="course-professor"></span>
-                                    </div>
-                                    </div>
-                                    <div class="grid-item-31 grid-item">
-                                        <div class="course-information">
-                                        <h2 class="course-title"></h2>
-                                        <span class="course-location"></span>
-                                        <span class="course-professor"></span>
-                                    </div>
-                                    </div>
-                                    <!-- SEVENTH ROW -->
-                                    <div class="grid-item-32 grid-item">
-                                        <span class="grid-hour">3:05PM - 4:20PM</span>
-                                    </div>
-                                    <div class="grid-item-33 grid-item">
-                                        <div class="course-information">
-                                            <h2 class="course-title"></h2>
-                                            <span class="course-location"></span>
-                                            <span class="course-professor"></span>
-                                        </div>
-                                    </div>
-                                    <div class="grid-item-34 grid-item">
-                                        <div class="course-information">
-                                        <h2 class="course-title"></h2>
-                                        <span class="course-location"></span>
-                                        <span class="course-professor"></span>
-                                    </div>
-                                    </div>
-                                    <div class="grid-item-35 grid-item">
-                                        <div class="course-information">
-                                        <h2 class="course-title"></h2>
-                                        <span class="course-location"></span>
-                                        <span class="course-professor"></span>
-                                    </div>
-                                    </div>
-                                    <div class="grid-item-36 grid-item">
-                                        <div class="course-information">
-                                        <h2 class="course-title"></h2>
-                                        <span class="course-location"></span>
-                                        <span class="course-professor"></span>
-                                    </div>
-                                    </div>
-                                    <div class="grid-item-37 grid-item">
-                                        <div class="course-information">
-                                        <h2 class="course-title"></h2>
-                                        <span class="course-location"></span>
-                                        <span class="course-professor"></span>
-                                    </div>
-                                    </div>
-                                    <!-- EIGHT ROW -->
-                                    <div class="grid-item-38 grid-item">
-                                        <span class="grid-hour">4:30PM - 5:45PM</span>
-                                    </div>
-                                    <div class="grid-item-39 grid-item">
-                                        <div class="course-information">
-                                            <h2 class="course-title"></h2>
-                                            <span class="course-location"></span>
-                                            <span class="course-professor"></span>
-                                        </div>
-                                    </div>
-                                    <div class="grid-item-40 grid-item">
-                                        <div class="course-information">
-                                        <h2 class="course-title"></h2>
-                                        <span class="course-location"></span>
-                                        <span class="course-professor"></span>
-                                    </div>
-                                    </div>
-                                    <div class="grid-item-41 grid-item">
-                                        <div class="course-information">
-                                        <h2 class="course-title"></h2>
-                                        <span class="course-location"></span>
-                                        <span class="course-professor"></span>
-                                    </div>
-                                    </div>
-                                    <div class="grid-item-42 grid-item">
-                                        <div class="course-information">
-                                        <h2 class="course-title"></h2>
-                                        <span class="course-location"></span>
-                                        <span class="course-professor"></span>
-                                    </div>
-                                    </div>
-                                    <div class="grid-item-43 grid-item">
-                                        <div class="course-information">
-                                        <h2 class="course-title"></h2>
-                                        <span class="course-location"></span>
-                                        <span class="course-professor"></span>
-                                    </div>
-                                    </div>
-                                    <!-- NINTH ROW -->
-                                    <div class="grid-item-44 grid-item">
-                                        <span class="grid-hour">5:55PM - 7:10PM</span>
-                                    </div>
-                                    <div class="grid-item-45 grid-item">
-                                        <div class="course-information">
-                                            <h2 class="course-title"></h2>
-                                            <span class="course-location"></span>
-                                            <span class="course-professor"></span>
-                                        </div>
-                                    </div>
-                                    <div class="grid-item-46 grid-item">
-                                        <div class="course-information">
-                                        <h2 class="course-title"></h2>
-                                        <span class="course-location"></span>
-                                        <span class="course-professor"></span>
-                                    </div>
-                                    </div>
-                                    <div class="grid-item-47 grid-item">
-                                        <div class="course-information">
-                                        <h2 class="course-title"></h2>
-                                        <span class="course-location"></span>
-                                        <span class="course-professor"></span>
-                                    </div>
-                                    </div>
-                                    <div class="grid-item-48 grid-item">
-                                        <div class="course-information">
-                                        <h2 class="course-title"></h2>
-                                        <span class="course-location"></span>
-                                        <span class="course-professor"></span>
-                                    </div>
-                                    </div>
-                                    <div class="grid-item-49 grid-item">
-                                        <div class="course-information">
-                                        <h2 class="course-title"></h2>
-                                        <span class="course-location"></span>
-                                        <span class="course-professor"></span>
-                                    </div>
-                                    </div>
-                                    <!-- TENTH ROW -->
-                                    <div class="grid-item-50 grid-item">
-                                        <span class="grid-hour">7:20 - 8:35PM</span>
-                                    </div>
-                                    <div class="grid-item-51 grid-item">
-                                        <div class="course-information">
-                                            <h2 class="course-title"></h2>
-                                            <span class="course-location"></span>
-                                            <span class="course-professor"></span>
-                                        </div>
-                                    </div>
-                                    <div class="grid-item-52 grid-item">
-                                        <div class="course-information">
-                                        <h2 class="course-title"></h2>
-                                        <span class="course-location"></span>
-                                        <span class="course-professor"></span>
-                                    </div>
-                                    </div>
-                                    <div class="grid-item-53 grid-item">
-                                        <div class="course-information">
-                                        <h2 class="course-title"></h2>
-                                        <span class="course-location"></span>
-                                        <span class="course-professor"></span>
-                                    </div>
-                                    </div>
-                                    <div class="grid-item-54 grid-item">
-                                        <div class="course-information">
-                                        <h2 class="course-title"></h2>
-                                        <span class="course-location"></span>
-                                        <span class="course-professor"></span>
-                                    </div>
-                                    </div>
-                                    <div class="grid-item-55 grid-item">
-                                        <div class="course-information">
-                                        <h2 class="course-title"></h2>
-                                        <span class="course-location"></span>
-                                        <span class="course-professor"></span>
-                                    </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                </div>
 
-                    <!-- RIGHT SIDE -->
-                    <!-- Card  -->
-                <div class = "card" style="width: 1rem;">
-                    <form action = "" method = "post" id = "addCourse">
-                    <div class="card" style="width: 18rem;">
-                        <center><h5 class = "heading-5">Add Course</h5></center>
-                    <!-- Course Title-->
-                        <div class = "card-body">
-                        <label type = "text" for = "courseTitle">Course Title:</label>
-                        <input type = "text" id = "courseTitle" name = "courseTitle">
-                        </div>
-                    <!-- COLOR -->
-                        <div class = "card-body">
-                        <label type = "color" for = "colorPicker">Color :</label>
-                        <input type = "color" id = "colorPicker" name = "color">
-                        </div>
-                    <!-- Days of week -->
-                    <div class="card-body">
-                        <table>
-                        <tr>
-                            <td>
-                            <div class="days">
-                                <div class = "day-container" id = "Monday">
-                                <label>Mon</label>
-                                <div class="check-box-container">
-                                    <input type="checkbox" class = "checkbox">
-                                </div>
-                                </div>
-                                <div class = "day-container" id = "Tuesday">
-                                <label>Tues</label>
-                                <div class="check-box-container">
-                                    <input type="checkbox" class = "checkbox">
-                                </div>
-                                </div>
-                                <div class = "day-container" id = "Wednesday">
-                                <label>Wed</label>
-                                <div class="check-box-container">
-                                    <input type="checkbox" class = "checkbox">
-                                </div>
-                                </div>
-                                <div class = "day-container" id = "Thursday">
-                                <label>Thurs</label>
-                                <div class="check-box-container">
-                                    <input type="checkbox" class = "checkbox">
-                                </div>
-                                </div>
-                                <div class = "day-container" id ="Friday">
-                                <label>Fri</label>
-                                <div class="check-box-container">
-                                    <input type="checkbox" class = "checkbox">
-                                </div>
-                                </div>
+                <!-- RIGHT SIDE -->
+                <!-- Card  -->
+                <div class="card" style="width: 1rem;">
+                    <form action="" method="post" id="addCourse">
+                        <div class="card">
+                            <h5>Add Course</h5>
+                            <!-- Course Title-->
+                            <div class="card-body">
+                                <label type="text" for="courseTitle">Course Title:</label>
+                                <input type="text" id="courseTitle" name="courseTitle">
                             </div>
-                            </td>
-                        </tr>
-                        </table>
-                    </div>
-                    <!-- Time --> 
-                    <div class="card-body">
-                        <label for = "time-slots">Time Slots</label>
-                        <select id = "time-slots" name = "time">
-                            <option value = "8:00 AM - 9:15 AM">8:00 AM - 9:15 PM</option>
-                            <option value = "9:25 AM - 10:40 AM">9:25 AM - 10:40 AM</option>
-                            <option value = "10:50 AM - 12:05 PM">10:50 AM - 12:05 PM</option>
-                            <option value = "12:15 PM - 1:30 PM">12:15 PM - 1:30 PM</option>
-                            <option value = "1:40 PM - 2:55 PM">1:40 PM - 2:55 PM</option>
-                            <option value = "3:05 PM - 4:20 PM">3:05 PM - 4:20 PM</option>
-                            <option value = "4:30 PM - 5:45 PM">4:30 PM - 5:45 PM</option>
-                            <option value = "5:55 PM - 7:10 PM">5:55 PM - 7:10 PM</option>
-                            <option value = "7:20 PM - 8:35 PM">7:20 PM - 8:35 PM</option>
-                        </select>
-                    </div>
-            
-                    <div class="card-body">
-                        <input type = "text" placeholder= "Location" name = "location">
-                    </div>
-                    <div class="card-body">
-                        <input type = "text" placeholder = "Professor" name = "professor">
-                    </div>
-                    <button id = submitPopUp>Submit Me</button>
+                            <!-- COLOR -->
+                            <div class="card-body">
+                                <label type="color" for="colorPicker">Color :</label>
+                                <input type="color" id="colorPicker" name="color">
+                            </div>
+                            <!-- Days of week -->
+                            <div class="card-body">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <div class="days">
+                                                <div class="day-container" id="Monday">
+                                                    <label>Mon</label>
+                                                    <div class="check-box-container">
+                                                        <input type="checkbox" class="checkbox">
+                                                    </div>
+                                                </div>
+                                                <div class="day-container" id="Tuesday">
+                                                    <label>Tues</label>
+                                                    <div class="check-box-container">
+                                                        <input type="checkbox" class="checkbox">
+                                                    </div>
+                                                </div>
+                                                <div class="day-container" id="Wednesday">
+                                                    <label>Wed</label>
+                                                    <div class="check-box-container">
+                                                        <input type="checkbox" class="checkbox">
+                                                    </div>
+                                                </div>
+                                                <div class="day-container" id="Thursday">
+                                                    <label>Thurs</label>
+                                                    <div class="check-box-container">
+                                                        <input type="checkbox" class="checkbox">
+                                                    </div>
+                                                </div>
+                                                <div class="day-container" id="Friday">
+                                                    <label>Fri</label>
+                                                    <div class="check-box-container">
+                                                        <input type="checkbox" class="checkbox">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <!-- Time -->
+                            <div class="card-body">
+                                <label for="time-slots">Time Slots</label>
+                                <select id="time-slots" name="time">
+                                    <option value="8:00 AM - 9:15 AM">8:00 AM - 9:15 PM</option>
+                                    <option value="9:25 AM - 10:40 AM">9:25 AM - 10:40 AM</option>
+                                    <option value="10:50 AM - 12:05 PM">10:50 AM - 12:05 PM</option>
+                                    <option value="12:15 PM - 1:30 PM">12:15 PM - 1:30 PM</option>
+                                    <option value="1:40 PM - 2:55 PM">1:40 PM - 2:55 PM</option>
+                                    <option value="3:05 PM - 4:20 PM">3:05 PM - 4:20 PM</option>
+                                    <option value="4:30 PM - 5:45 PM">4:30 PM - 5:45 PM</option>
+                                    <option value="5:55 PM - 7:10 PM">5:55 PM - 7:10 PM</option>
+                                    <option value="7:20 PM - 8:35 PM">7:20 PM - 8:35 PM</option>
+                                </select>
+                            </div>
+                            <div class="card-body">
+                                <input type="text" placeholder="Location" name="location">
+                            </div>
+                            <div class="card-body">
+                                <input type="text" placeholder="Professor" name="professor">
+                            </div>
+                            <button id=submitPopUp>Submit Me</button>
+                        </div>
                     </form>
                 </div>
-            </main>
-        </div>
+        </main>
+    </div>
+    <!-- JavaScript -->
     <script src="./js/action-form.js"></script>
-  </body>
+</body>
+
 </html>
