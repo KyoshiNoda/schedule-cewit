@@ -80,6 +80,11 @@ header {
 
 .grid-item {
     background-color: #fff;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .grid-item-1 {
