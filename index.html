@@ -416,16 +416,17 @@
                     <!-- Card  -->
                     <div class="form-container">
                         <form action="" method="post" id="add-course">
-                            <div>
-                                <h3 class="form-title">ADD COURSE +</h3>
+                            <h3 class="form-title">ADD COURSE +</h3>
+                            <div class="time-heading">TIME</div>
+                            <div class="inputs-container">
                                 <!-- Course Title-->
-                                <div class="card-body">
-                                    <label type="text" for="courseTitle">Course Title:</label>
+                                <div class="card-body course-input-container">
+                                    <label type="text" for="courseTitle">Course Title</label>
                                     <input type="text" id="courseTitle" name="courseTitle">
                                 </div>
                                 <!-- COLOR -->
-                                <div class="card-body">
-                                    <label type="color" for="colorPicker">Color :</label>
+                                <div class="card-body color-input-container">
+                                    <label type="color" for="colorPicker">Color</label>
                                     <input type="color" id="colorPicker" name="color">
                                 </div>
                                 <!-- Days of week -->
@@ -479,10 +480,10 @@
                                     </select>
                                 </div>
                                 <div class="card-body">
-                                    <input type="text" placeholder="Location" name="location">
+                                    <input class="location-input" type="text" placeholder="Location" name="location">
                                 </div>
                                 <div class="card-body">
-                                    <input type="text" placeholder="Professor" name="professor">
+                                    <input class="professor-input" type="text" placeholder="Professor" name="professor">
                                 </div>
                                 <button id=submit-form>Submit Me</button>
                             </div>
